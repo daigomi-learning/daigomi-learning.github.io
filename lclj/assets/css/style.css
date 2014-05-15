@@ -1,0 +1,27 @@
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 20px; }
+
+body {
+    font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',
+ Meiryo, sans-serif;
+     color: #000000;
+}
+
+.navbar {
+    border-bottom: 7px solid #3674A5;
+    background-color: #ffffff;
+}
+
+.navbar-brand { color: #000000; }
+
+.sidebar {
+    padding-right: 0px;
+}
+
+.main .row {
+/*    margin-left: 0px;*/
+    border-left: 1px solid;
+}
+
+#content { padding-left: 15px; }

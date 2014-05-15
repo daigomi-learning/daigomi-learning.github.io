@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>How to build LCLJ site - The League of Daigomi Learning</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="The League of Daigomi Learning" />
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="How to build LCLJ site"/>
+            <meta property="og:url" content="/how-to-build-lclj-site.html"/>
+            <meta property="og:description" content="```$ pelican-quickstart Welcome to pelican-quickstart v3.3.0. This script will help you create a new Pelican-based website. Please answer the following questions so this script can generate the files needed by Pelican. Where do you want to create your new web site? [.] LCLJ2013 What will be the title of this ..."/>
+            <meta property="article:published_time" content="2014-12-31" />
+                <meta property="article:section" content="misc" />
+                <meta property="article:author" content="The League of Daigomi Learning" />
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+The League of Daigomi Learning            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/courses.html">Courses</a></li>
+                    <li><a href="/about.html">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://twitter.com/LCLJ2013/"><i
+                            class="fa fa-twitter-square fa-lg"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/lclj2013"><i
+                            class="fa fa-facebook-square fa-lg"></i>
+                    </a></li>
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/how-to-build-lclj-site.html"
+                       rel="bookmark"
+                       title="Permalink to How to build LCLJ site">
+                        How to build LCLJ site
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <p>```$ pelican-quickstart
+Welcome to pelican-quickstart v3.3.0.</p>
+<p>This script will help you create a new Pelican-based website.</p>
+<p>Please answer the following questions so this script can generate the files
+needed by Pelican.</p>
+<blockquote>
+<p>Where do you want to create your new web site? [.] LCLJ2013
+What will be the title of this web site? クリエイティブな学びをみんなで学ぶ
+Who will be the author of this web site? The League of Daigomi Learning
+What will be the default language of this web site? [en] ja
+Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
+What is your URL prefix? (see above example; no trailing slash) http://www.daigomi.org/lclj
+Do you want to enable article pagination? (Y/n) n
+Do you want to generate a Fabfile/Makefile to automate generation and publishing? (Y/n)
+Do you want an auto-reload &amp; simpleHTTP script to assist with theme and site development? (Y/n)
+Do you want to upload your website using FTP? (y/N)
+Do you want to upload your website using SSH? (y/N)
+Do you want to upload your website using Dropbox? (y/N)
+Do you want to upload your website using S3? (y/N)
+Do you want to upload your website using Rackspace Cloud Files? (y/N)
+Done. Your new project is available at /Users/takeda/Dropbox/Current/DAIGOMI/LCLJ2013</p>
+</blockquote>
+<div class="highlight"><pre><span class="cp">##pelican-bootstrap3</span>
+
+<span class="nl">https:</span><span class="c1">//github.com/DandyDev/pelican-bootstrap3</span>
+
+<span class="nl">First:</span>
+</pre></div>
+
+
+<p>cd theme
+git clone https://github.com/DandyDev/pelican-bootstrap3.git
+```</p>
+<p>Then:</p>
+<p>Point the THEME variable in your pelicanconf.py to /path/to/pelican-bootstrap3</p>
+<p>DISPLAY_PAGES_ON_MENUを設定する</p>
+<p>pelican lclj2013/content/ -s lclj2013conf.py -o output/lclj</p>
+<h2>Assignment一覧を自動的に取得する。</h2>
+<p>[articles for (tag, articles) in tags if tag == 1][0]</p>
+<p>では無理。</p>
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-12-31T00:00:00"> 水 31 12月 2014</time>
+    </span>
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                    <ul class="list-group" id="recentposts">
+                        <li class="list-group-item">
+                            <a href="/courses.html">
+                                Courses
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/daigomiraningunitsuite.html">
+                                ダイゴミラーニングについて
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/jmooc-openedu.html">
+                                オープンエデュケーションと未来の学び
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/lclj2013.html">
+                                クリエイティブな学びをみんなで学ぶ
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/lclj2013-metameta.html">
+                                クリエイティブな学びをみんなで学ぶ番外編
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="https://ja-jp.facebook.com/openedlab" target="_blank">
+                オープン教育研究所
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="www.tokyocs.org" target="_blank">
+                東京コミュニティスクール
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://learningpatterns.sfc.keio.ac.jp/" target="_blank">
+                ラーニングパターン
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2014 The League of Daigomi Learning
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+</body>
+</html>

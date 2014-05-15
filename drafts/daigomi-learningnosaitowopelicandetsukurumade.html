@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>Daigomi LearningのサイトをPelicanでつくるまで - The League of Daigomi Learning</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="The League of Daigomi Learning" />
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="Daigomi LearningのサイトをPelicanでつくるまで"/>
+            <meta property="og:url" content="/daigomi-learningnosaitowopelicandetsukurumade.html"/>
+            <meta property="og:description" content="Pelican Pelicanはインストール済みとする。 pelican-quickstart 必要なフォルダを作成する。 mkdir -p static/{css, js, images} mkdir -p resouces テーマのインストール mkdir theme cd theme git clone https://github.com/DandyDev/pelican-bootstrap3.git git branch daigomi git checkout pelicanconf.pyの設定 TIMEZONE = &#39;Asia/Tokyo&#39; DEFAULT_LANG = u&#39;ja&#39; STATIC_PATHS = ([&#39;images&#39;]) THEME = &#34;theme/pelican-bootstrap3&#34; BOOTSTRAP_THEME = &#34;cerulean&#34; CUSTOM_CSS = &#34;static/css ..."/>
+            <meta property="article:published_time" content="2014-12-31" />
+                <meta property="article:section" content="misc" />
+                <meta property="article:author" content="The League of Daigomi Learning" />
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+The League of Daigomi Learning            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/courses.html">Courses</a></li>
+                    <li><a href="/about.html">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://twitter.com/LCLJ2013/"><i
+                            class="fa fa-twitter-square fa-lg"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/lclj2013"><i
+                            class="fa fa-facebook-square fa-lg"></i>
+                    </a></li>
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/daigomi-learningnosaitowopelicandetsukurumade.html"
+                       rel="bookmark"
+                       title="Permalink to Daigomi LearningのサイトをPelicanでつくるまで">
+                        Daigomi LearningのサイトをPelicanでつくるまで
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <h2>Pelican</h2>
+<p>Pelicanはインストール済みとする。</p>
+<div class="highlight"><pre><span class="n">pelican</span><span class="o">-</span><span class="n">quickstart</span>
+</pre></div>
+
+
+<p>必要なフォルダを作成する。</p>
+<div class="highlight"><pre> <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="k">static</span><span class="o">/</span><span class="p">{</span><span class="n">css</span><span class="p">,</span> <span class="n">js</span><span class="p">,</span> <span class="n">images</span><span class="p">}</span>
+ <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="n">resouces</span>
+</pre></div>
+
+
+<h2>テーマのインストール</h2>
+<div class="highlight"><pre><span class="n">mkdir</span> <span class="n">theme</span>
+<span class="n">cd</span> <span class="n">theme</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="o">:</span><span class="c1">//github.com/DandyDev/pelican-bootstrap3.git</span>
+<span class="n">git</span> <span class="n">branch</span> <span class="n">daigomi</span>
+<span class="n">git</span> <span class="n">checkout</span>
+</pre></div>
+
+
+<h2>pelicanconf.pyの設定</h2>
+<div class="highlight"><pre><span class="n">TIMEZONE</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">Asia</span><span class="o">/</span><span class="n">Tokyo</span><span class="err">&#39;</span>
+<span class="n">DEFAULT_LANG</span> <span class="o">=</span> <span class="n">u</span><span class="err">&#39;</span><span class="n">ja</span><span class="err">&#39;</span>
+
+<span class="n">STATIC_PATHS</span> <span class="o">=</span> <span class="p">([</span><span class="err">&#39;</span><span class="n">images</span><span class="err">&#39;</span><span class="p">])</span>
+
+<span class="n">THEME</span> <span class="o">=</span> <span class="s">&quot;theme/pelican-bootstrap3&quot;</span>
+<span class="n">BOOTSTRAP_THEME</span> <span class="o">=</span> <span class="s">&quot;cerulean&quot;</span>
+<span class="n">CUSTOM_CSS</span> <span class="o">=</span> <span class="s">&quot;static/css/style.css&quot;</span>
+
+<span class="cp"># Feed generation is usually not desired when developing</span>
+<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="n">None</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="n">None</span>
+<span class="n">TRANSLATION_FEED_ATOM</span> <span class="o">=</span> <span class="n">None</span>
+
+<span class="cp"># Blogroll</span>
+<span class="n">LINKS</span> <span class="o">=</span>  <span class="p">()</span>
+
+<span class="cp"># Social widget</span>
+<span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">((</span><span class="err">&#39;</span><span class="n">twitter</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//twitter.com/lclj2013&#39;),</span>
+          <span class="p">(</span><span class="err">&#39;</span><span class="n">facebook</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//www.linkedin.com/pub/toshiyuki-takeda/26/9a0/881&#39;),</span>
+          <span class="p">)</span>
+
+<span class="n">DEFAULT_PAGINATION</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">DEFAULT_DATE</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">fs</span><span class="err">&#39;</span>
+<span class="n">DATE_FORMATS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="err">&#39;</span><span class="n">en</span><span class="err">&#39;</span><span class="o">:</span> <span class="err">&#39;</span><span class="o">%</span><span class="n">a</span><span class="p">,</span> <span class="o">%</span><span class="n">d</span> <span class="o">%</span><span class="n">b</span> <span class="o">%</span><span class="n">Y</span><span class="err">&#39;</span><span class="p">,</span>
+    <span class="err">&#39;</span><span class="n">jp</span><span class="err">&#39;</span><span class="o">:</span> <span class="err">&#39;</span><span class="o">%</span><span class="n">Y</span><span class="o">-%</span><span class="n">m</span><span class="o">-%</span><span class="n">d</span><span class="p">(</span><span class="o">%</span><span class="n">a</span><span class="p">)</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h1>＃ホームページをつくる</h1>
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-12-31T00:00:00"> 水 31 12月 2014</time>
+    </span>
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                    <ul class="list-group" id="recentposts">
+                        <li class="list-group-item">
+                            <a href="/courses.html">
+                                Courses
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/daigomiraningunitsuite.html">
+                                ダイゴミラーニングについて
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/jmooc-openedu.html">
+                                オープンエデュケーションと未来の学び
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/lclj2013.html">
+                                クリエイティブな学びをみんなで学ぶ
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/lclj2013-metameta.html">
+                                クリエイティブな学びをみんなで学ぶ番外編
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="https://ja-jp.facebook.com/openedlab" target="_blank">
+                オープン教育研究所
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="www.tokyocs.org" target="_blank">
+                東京コミュニティスクール
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://learningpatterns.sfc.keio.ac.jp/" target="_blank">
+                ラーニングパターン
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2014 The League of Daigomi Learning
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+</body>
+</html>
