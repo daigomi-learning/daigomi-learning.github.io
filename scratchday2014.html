@@ -29,6 +29,40 @@
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
         <link href="/static/css/style.css" rel="stylesheet">
 
+<!-- Import main Annotorious script and CSS -->
+<link rel="stylesheet" href="http://annotorious.github.com/latest/annotorious.css" type="text/css" />
+<script src="http://annotorious.github.com/latest/annotorious.min.js"></script>
+
+<!-- Import jQuery - the plugin depends on it! -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<!-- Import Parse's javascript sdk - the plugin depends on it! -->
+<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+
+<!-- Import the css styles -->
+<link rel="stylesheet" href="anno-parse-plugin.css" type="text/css" />
+
+<!-- Import the plugin script -->
+<script src="anno-parse-plugin.js"></script>
+
+<!-- Use Annotorious' JavaScript API to attach and activate the plugin -->
+<script>
+ anno.addPlugin('Parse', { app_id: '915ufRlRc7vM1wc4J8KiaYEoEZgFzBdorU98pSFI', js_key: 'TC9CVwCH6Ukin1mMfT2Y5XI5WpCzT6F3rvF7u5vf' });
+</script>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'scratchdaytokyo'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </head>
 <body>
@@ -152,53 +186,12 @@ The League of Daigomi Learning            </a>
 下には自由に書いていただけるコメント欄も用意しました。
 2週間ほどで閉じる予定ですが、参加者もそうでない方も、ぜひご意見などを書き込んでください。</p>
 <p><img class="annotatable" src="/static/images/sd2014-metamandala.jpg" alt="ScratchDay2014 メタマンダラ"></p>
-<!-- Import main Annotorious script and CSS -->
-
-<p><link rel="stylesheet" href="http://annotorious.github.com/latest/annotorious.css" type="text/css" />
-<script src="http://annotorious.github.com/latest/annotorious.min.js"></script></p>
-<!-- Import jQuery - the plugin depends on it! -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-<!-- Import Parse's javascript sdk - the plugin depends on it! -->
-
-<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
-
-<!-- Import the css styles -->
-
-<p><link rel="stylesheet" href="anno-parse-plugin.css" type="text/css" /></p>
-<!-- Import the plugin script -->
-
-<script src="anno-parse-plugin.js"></script>
-
-<!-- Use Annotorious' JavaScript API to attach and activate the plugin -->
-
-<script>
- anno.addPlugin('Parse', { app_id: '915ufRlRc7vM1wc4J8KiaYEoEZgFzBdorU98pSFI', js_key: 'TC9CVwCH6Ukin1mMfT2Y5XI5WpCzT6F3rvF7u5vf' });
-</script>
-
 <div id="disqus_thread"></div>
-
-<script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-var disqus_shortname = 'scratchdaytokyo'; // required: replace example with your forum shortname
-
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function() {
-var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-<p><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></p>
                 <div class="panel">
                     <div class="panel-body">
 <footer class="post-info">
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-05-21T11:53:43"> 水 21 5月 2014</time>
+        <i class="fa fa-calendar"></i><time datetime="2014-05-21T12:17:56"> 水 21 5月 2014</time>
     </span>
 
 
