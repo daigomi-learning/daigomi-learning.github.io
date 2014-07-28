@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /jmooc-openedu-2014/
+
